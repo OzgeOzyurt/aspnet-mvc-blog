@@ -1,11 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<partial name="_Header" />
+<partial name="_Slider" />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<partial name="_Articles" />
 
+<section class="footer-2 section-padding gray-bg pb-5">
+    <div class="container">
 
-Home/Index
+        <partial name="_Subscribe" />
+        <partial name="_Footer" />
+    </div>
+</section>
