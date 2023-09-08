@@ -22,10 +22,15 @@ namespace AspNetMvcBlog.Data.Entity
         [MinLength(10, ErrorMessage = "{0} en az {1} karakter olabilir!")]
         public string PostContext { get; set; }
 
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        public DateTime PostDate { get; set; }
+
         public List<CategoryPost> CategoryPosts { get; set; }
+        public PostImage PostImage { get; set; }
 
         public int UserId { get; set; }
         public User User { get; set; }
-    }
 
+
+    }
 }

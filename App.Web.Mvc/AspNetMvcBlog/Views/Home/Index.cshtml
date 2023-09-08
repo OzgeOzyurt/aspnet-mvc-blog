@@ -1,8 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<partial name="_Header" />
-<partial name="_Slider" />
+
+@*<partial name="_Header" />*@
+@await Component.InvokeAsync("Navbar")
+@*<partial name="_Slider" />*@
+
+@await Component.InvokeAsync("Slider")
 
 <partial name="_Articles" />
 
@@ -13,3 +17,5 @@
         <partial name="_Footer" />
     </div>
 </section>
+
+

@@ -1,3 +1,5 @@
+using AspNetMvcBlog.Data.Entity;
+
 namespace AspNetMvcBlog.Models
 {
     public class ErrorViewModel
