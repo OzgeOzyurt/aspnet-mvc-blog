@@ -1,5 +1,5 @@
-﻿using AspNetMvcBlog.Data.Entity;
-using AspNetMvcBlog.Data;
+﻿using App.Persistence.Data.Entity;
+using App.Persistence.Data;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Security.Cryptography;

@@ -1,9 +1,9 @@
-﻿using AspNetMvcBlog.Data.Entity;
+﻿using App.Persistence.Data.Entity;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 
-namespace AspNetMvcBlog.Data
+namespace App.Persistence.Data
 {
     public class AppDbContext : DbContext
     {

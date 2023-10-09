@@ -1,4 +1,4 @@
-﻿using AspNetMvcBlog.Data;
+﻿using App.Persistence.Data;
 using AspNetMvcBlog.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;

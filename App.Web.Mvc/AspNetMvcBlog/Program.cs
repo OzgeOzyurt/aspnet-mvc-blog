@@ -1,4 +1,4 @@
-using AspNetMvcBlog.Data;
+using App.Persistence.Data;
 using Microsoft.EntityFrameworkCore;
 
 
