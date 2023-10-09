@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using AspNetMvcBlog.Data.Entity;
-using Microsoft.Extensions.Hosting;
+using App.Persistence.Data.Entity;
 
-namespace AspNetMvcBlog.Data.Entity
+
+namespace App.Persistence.Data.Entity
 {
     public class CategoryPost
     {

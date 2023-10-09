@@ -1,4 +1,4 @@
-using AspNetMvcBlog.Data.Entity;
+using App.Persistence.Data.Entity;
 
 namespace AspNetMvcBlog.Models
 {

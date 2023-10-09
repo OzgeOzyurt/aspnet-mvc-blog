@@ -1,7 +1,7 @@
-﻿using AspNetMvcBlog.Data.Entity;
+﻿using App.Persistence.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNetMvcBlog.Data
+namespace App.Persistence.Data
 {
     public class DbSeeder
     {
