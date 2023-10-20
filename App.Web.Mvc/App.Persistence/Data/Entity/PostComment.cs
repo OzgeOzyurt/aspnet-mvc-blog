@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App.Persistence.Data.Entity
 {
@@ -18,6 +18,8 @@ namespace App.Persistence.Data.Entity
 
         public int PostId { get; set; }
 
-        public Post Post { get; set; }
+        public Post? Post { get; set; }
+
+
     }
 }
