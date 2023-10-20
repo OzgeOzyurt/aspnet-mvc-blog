@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace App.Business.Dtos.Category
 {
-	internal class CreateOrEditCategoryDto
-	{
-		public string CategoryName { get; set; }
-	}
+    public class CreateOrEditCategoryDto
+    {
+        [Required(ErrorMessage = "{0} boş geçilemez.")]
+        [DisplayName("Kategori Adı")]
+        [StringLength(40, ErrorMessage = "{0} {1} karakterden fazla olamaz!")]
+        [MinLength(3, ErrorMessage = "{0} en az {1} karakter olabilir!")]
+        public string CategoryName { get; set; }
+    }
 }

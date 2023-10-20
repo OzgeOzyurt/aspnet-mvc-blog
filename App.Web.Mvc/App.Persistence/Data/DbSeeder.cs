@@ -42,6 +42,11 @@ namespace App.Persistence.Data
                     UserPassword = "cem12"
                 }
                 );
+            //Setting
+            modelBuilder.Entity<Setting>().HasData(
+              new Setting { Id = 1, UserId = 1, DarkMode = false },
+              new Setting { Id = 2, UserId = 2, DarkMode = true }
+            );
             //Post
             modelBuilder.Entity<Post>().HasData(
                     new Post

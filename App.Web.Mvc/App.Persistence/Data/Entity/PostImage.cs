@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App.Persistence.Data.Entity
 {
@@ -10,9 +11,11 @@ namespace App.Persistence.Data.Entity
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [DisplayName("Resim URL")]
+        [DisplayName("Resim")]
         public string ImageUrl { get; set; }
 
+        [NotMapped]
+        public IFormFile Image { get; set; } = null!;
         public int PostId { get; set; }
 
         public Post Post { get; set; }
